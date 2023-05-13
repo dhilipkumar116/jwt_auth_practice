@@ -1,0 +1,7 @@
+packages used:
+    morgan - to show logs in console
+    http-errors - to handle errors gracefully
+
+extensions used:
+    rest client - to make api call from vscode (rest.http) // substitute for postman
+

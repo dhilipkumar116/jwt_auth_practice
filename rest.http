@@ -1,0 +1,41 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODMzOTY5OTcsImV4cCI6MTY4MzM5NzAyNywiYXVkIjoiNjQ1Njk4MzE0NDgzMjRiOTlkNjI1M2Q0IiwiaXNzIjoiZGhpbGlwLmNvbSJ9.on6pBa9Q6eRheeCtlAihRJcZhLUFocskmLhG8BeMM9s
+
+###
+GET http://localhost:3000/abc
+
+
+
+### register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "1@gmail.com",
+    "password": "123"
+}
+
+### login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "kumar@gmail.com",
+    "password":"123"
+}
+
+### refresh token
+POST http://localhost:3000/auth/refresh_token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODM0NTY1MTUsImV4cCI6MTcxNTAxNDExNSwiYXVkIjoiNjQ1NzgxODNlZDE0YWM5YTNmZDgwZjkxIiwiaXNzIjoiZGhpbGlwLmNvbSJ9.khhf_NkO52Od9oodngsMaImhIV1wNMExwhrFQvjpTG7"
+}
+
+### logout
+DELETE  http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODM0NTc5NzQsImV4cCI6MTcxNTAxNTU3NCwiYXVkIjoiNjQ1Nzg3YjY0ZjZiNzVhZGVjMGVkZTgxIiwiaXNzIjoiZGhpbGlwLmNvbSJ9.b-LXvf_0VDXQF4h7ZfR48Wyvw08YB9mcynQVC_ocVEU"
+}
